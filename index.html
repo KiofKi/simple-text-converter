@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#9b4646">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000000">
+    <script src="script.js" defer></script>
+    <title>simple text converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>simple text converter</h1>
+        <p class="subtitle">convert your text to lowercase, UPPERCASE, Capitalized or rANdoMiZeD</p>
+        <textarea autofocus type="text" name="input" id="input" rows="5" cols="40" maxlength="500" placeholder="input"></textarea>
+        <div class="tools">
+            <button onclick="lowercase()">aaa</button>
+            <button onclick="uppercase()">AAA</button>
+            <button onclick="capitalize()">Aaa</button>
+            <button onclick="randomize()">aAa</button>
+        </div>
+        <textarea disabled type="text" name="output" id="output" rows="5" cols="40" placeholder="output"></textarea>
+    </div>
+</body>
+</html>
