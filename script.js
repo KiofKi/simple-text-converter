@@ -3,12 +3,20 @@ const output = document.getElementById("output")
 
 function lowercase() {
     output.innerText = input.value.toLowerCase();
-    output.disabled = false;
+    if (output.value == "") {
+        output.disabled = true;
+    } else {
+        output.disabled = false;
+    };
 };
 
 function uppercase() {
     output.innerText = input.value.toUpperCase();
-    output.disabled = false;
+    if (output.value == "") {
+        output.disabled = true;
+    } else {
+        output.disabled = false;
+    };
 };
 
 function capitalize() {
@@ -17,7 +25,11 @@ function capitalize() {
         arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].toLowerCase().slice(1);
     }
     output.innerText = arr.join(" ");
-    output.disabled = false;
+    if (output.value == "") {
+        output.disabled = true;
+    } else {
+        output.disabled = false;
+    };
 };
 
 function randomize() {
@@ -32,6 +44,10 @@ function randomize() {
             arr += str[i].toLowerCase();
         };
         output.innerText += arr;
-        output.disabled = false;
+        if (output.value == "") {
+            output.disabled = true;
+        } else {
+            output.disabled = false;
+        };
     };
 };
